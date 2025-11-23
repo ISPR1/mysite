@@ -102,3 +102,44 @@
     align-items: center;
   }
 }
+
+/* Existing styles in Hero.module.css */
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column-reverse;
+    margin: 49px 5%; /* Reduce horizontal margin from 10% to 5% */
+  }
+
+  .content {
+    align-items: center;
+    width: 100%; /* Ensure content block takes full width */
+  }
+
+  .title {
+    font-size: 48px; /* Reduce font size from 72px */
+    margin-bottom: 20px;
+  }
+
+  .description {
+    font-size: 24px; /* Reduce font size from 30px */
+    text-align: center; /* Center align text on mobile */
+    margin-bottom: 30px;
+  }
+  
+  .contactBtn {
+    font-size: 24px; /* Reduce button font size from 30px */
+    padding: 12px 20px;
+  }
+
+  .heroImg {
+    width: 70%; /* Adjust image size for single column layout */
+    max-width: 300px;
+    margin-bottom: 30px; /* Add space between image and content */
+  }
+
+  /* Hide blur elements to prevent horizontal overflow on small screens */
+  .topBlur, .bottomBlur {
+    display: none;
+  }
+}
