@@ -110,3 +110,17 @@
 .link:hover {
   background: var(--color-primary-hover);
 }
+
+
+/* Existing styles in ProjectCard.module.css */
+/* ... */
+
+/* Add the following block to the end of the file */
+@media screen and (max-width: 830px) {
+  .container {
+    width: 100%;
+    max-width: 380px; /* Set a max width for large phones/small tablets */
+    height: auto;
+    margin: 10px 0; /* Adjust margin for mobile stacking */
+  }
+}
