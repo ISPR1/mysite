@@ -42,3 +42,18 @@
   background-color: var(--color-background);
   border-radius: 10px;
 }
+
+/* Existing styles in Projects.module.css */
+/* ... */
+
+/* Add the following block to the end of the file */
+@media screen and (max-width: 830px) {
+  .container {
+    overflow-x: hidden; /* Prevents horizontal scroll on mobile */
+    margin-left: 5%; /* Reduces margin from 10% to 5% for better screen use */
+    margin-right: 5%;
+  }
+  .projects {
+    gap: 25px; /* Increases vertical space between stacked cards */
+  }
+}
