@@ -182,3 +182,60 @@
   color: white; /* Changed to white */
   font-size: 1.20rem;
 }
+
+/* Add the following block to the end of the file */
+@media screen and (max-width: 830px) {
+  .title {
+    font-size: 2rem; /* Reduced from 2.5rem */
+  }
+
+  .skill {
+    width: 90px; /* Adjust overall skill item width */
+  }
+
+  .skillImageContainer {
+    width: 70px; /* Reduced container size */
+    height: 70px; 
+  }
+
+  .skillImageContainer img {
+    width: 45px; /* Reduced icon size */
+  }
+
+  .skill p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .historyItem {
+    flex-direction: column; /* Stack logo and details vertically */
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .historyItemDetails {
+    align-items: center;
+  }
+  
+  .historyItemDetails h3 {
+    font-size: 1.5rem; /* Reduced font size from 2.25rem */
+    text-align: center;
+  }
+
+  .historyItemDetails p {
+    font-size: 1.1rem; /* Reduced font size from 1.5rem */
+    text-align: center;
+  }
+
+  .historyItemDetails ul {
+    text-align: left; /* Keep bullet points correctly formatted */
+    padding-left: 1rem;
+    max-width: 100%;
+  }
+
+  .historyItemDetails li {
+    font-size: 1rem; /* Reduced font size from 1.2rem */
+  }
+}
